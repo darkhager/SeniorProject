@@ -62,8 +62,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Alphabet.cs" />
     <Compile Include="Assets\levelDisplay.cs" />
     <Compile Include="Assets\WordDisplay.cs" />
+    <Compile Include="Assets\WordSystem.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>E:/GITHUB/SeniorProject/SeniorProject/SeniorProject/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
