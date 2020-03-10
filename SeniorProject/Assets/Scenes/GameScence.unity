@@ -148,20 +148,20 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1427498111}
-  - {fileID: 1017595791}
-  - {fileID: 265916345}
-  - {fileID: 179515326}
   - {fileID: 793980539}
+  - {fileID: 179515326}
+  - {fileID: 265916345}
+  - {fileID: 1017595791}
   - {fileID: 248593532}
-  - {fileID: 521492335}
-  - {fileID: 1033427337}
-  - {fileID: 1949732340}
   - {fileID: 301001757}
+  - {fileID: 1949732340}
+  - {fileID: 1033427337}
+  - {fileID: 521492335}
   - {fileID: 1202768071}
-  - {fileID: 1087742394}
-  - {fileID: 538128195}
-  - {fileID: 2094464383}
   - {fileID: 1832216749}
+  - {fileID: 2094464383}
+  - {fileID: 538128195}
+  - {fileID: 1087742394}
   m_Father: {fileID: 1697368950}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -227,18 +227,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 5
+    m_MaxSize: 55
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: L
 --- !u!222 &156080693
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 179515328}
   - component: {fileID: 179515327}
   m_Layer: 5
-  m_Name: Alphabet (4)
+  m_Name: Alphabet3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -279,11 +279,11 @@ RectTransform:
   m_Children:
   - {fileID: 590565000}
   m_Father: {fileID: 59237740}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000019073, y: -34.2}
+  m_AnchoredPosition: {x: 0, y: -34.2}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &179515327
@@ -422,18 +422,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 5
+    m_MaxSize: 55
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: F
 --- !u!222 &192411790
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -499,18 +499,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 5
+    m_MaxSize: 55
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: H
 --- !u!222 &223978143
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -532,7 +532,7 @@ GameObject:
   - component: {fileID: 248593534}
   - component: {fileID: 248593533}
   m_Layer: 5
-  m_Name: Alphabet (1)
+  m_Name: Alphabet6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -694,18 +694,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 5
+    m_MaxSize: 55
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: D
 --- !u!222 &260508308
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -727,7 +727,7 @@ GameObject:
   - component: {fileID: 265916347}
   - component: {fileID: 265916346}
   m_Layer: 5
-  m_Name: Alphabet (3)
+  m_Name: Alphabet4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -746,7 +746,7 @@ RectTransform:
   m_Children:
   - {fileID: 260508306}
   m_Father: {fileID: 59237740}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -845,7 +845,7 @@ GameObject:
   - component: {fileID: 301001759}
   - component: {fileID: 301001758}
   m_Layer: 5
-  m_Name: Alphabet (9)
+  m_Name: Alphabet7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -864,7 +864,7 @@ RectTransform:
   m_Children:
   - {fileID: 1361168645}
   m_Father: {fileID: 59237740}
-  m_RootOrder: 9
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1007,18 +1007,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 5
+    m_MaxSize: 55
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: J
 --- !u!222 &354167298
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1189,7 +1189,7 @@ GameObject:
   - component: {fileID: 521492337}
   - component: {fileID: 521492336}
   m_Layer: 5
-  m_Name: Alphabet (6)
+  m_Name: Alphabet10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1208,7 +1208,7 @@ RectTransform:
   m_Children:
   - {fileID: 354167296}
   m_Father: {fileID: 59237740}
-  m_RootOrder: 6
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1351,18 +1351,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 5
+    m_MaxSize: 55
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: I
 --- !u!222 &532570556
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1384,7 +1384,7 @@ GameObject:
   - component: {fileID: 538128197}
   - component: {fileID: 538128196}
   m_Layer: 5
-  m_Name: Alphabet (12)
+  m_Name: Alphabet14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1403,7 +1403,7 @@ RectTransform:
   m_Children:
   - {fileID: 1429167709}
   m_Father: {fileID: 59237740}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1546,18 +1546,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 5
+    m_MaxSize: 300
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: C
 --- !u!222 &590565002
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1577,6 +1577,7 @@ GameObject:
   - component: {fileID: 699281594}
   - component: {fileID: 699281596}
   - component: {fileID: 699281595}
+  - component: {fileID: 699281597}
   m_Layer: 5
   m_Name: 
   m_TagString: Untagged
@@ -1623,18 +1624,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 5
+    m_MaxSize: 55
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: A
 --- !u!222 &699281596
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1643,6 +1644,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 699281593}
   m_CullTransparentMesh: 0
+--- !u!114 &699281597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699281593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1f42bd477b26dc45aee6d10ffed2983, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &793980538
 GameObject:
   m_ObjectHideFlags: 0
@@ -1656,7 +1669,7 @@ GameObject:
   - component: {fileID: 793980541}
   - component: {fileID: 793980540}
   m_Layer: 5
-  m_Name: Alphabet (5)
+  m_Name: Alphabet2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1675,7 +1688,7 @@ RectTransform:
   m_Children:
   - {fileID: 1188087571}
   m_Father: {fileID: 59237740}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1773,7 +1786,7 @@ GameObject:
   - component: {fileID: 905398226}
   - component: {fileID: 905398225}
   - component: {fileID: 905398224}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: AlphaSetDisplay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1812,6 +1825,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alphaText: {fileID: 905398225}
+  alphabet1: {fileID: 699281595}
+  alphabet2: {fileID: 1188087572}
+  alphabet3: {fileID: 590565001}
+  alphabet4: {fileID: 260508307}
+  alphabet5: {fileID: 1196855358}
+  alphabet6: {fileID: 192411789}
+  alphabet7: {fileID: 1361168646}
+  alphabet8: {fileID: 223978142}
+  alphabet9: {fileID: 532570555}
+  alphabet10: {fileID: 354167297}
+  alphabet11: {fileID: 2081548778}
+  alphabet12: {fileID: 156080692}
+  alphabet13: {fileID: 2103213133}
+  alphabet14: {fileID: 1429167710}
+  alphabet15: {fileID: 984740375}
 --- !u!114 &905398225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1909,18 +1937,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 5
+    m_MaxSize: 55
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: O
 --- !u!222 &984740376
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1942,7 +1970,7 @@ GameObject:
   - component: {fileID: 1017595793}
   - component: {fileID: 1017595792}
   m_Layer: 5
-  m_Name: Alphabet (2)
+  m_Name: Alphabet5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1961,7 +1989,7 @@ RectTransform:
   m_Children:
   - {fileID: 1196855357}
   m_Father: {fileID: 59237740}
-  m_RootOrder: 1
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2060,7 +2088,7 @@ GameObject:
   - component: {fileID: 1033427339}
   - component: {fileID: 1033427338}
   m_Layer: 5
-  m_Name: Alphabet (7)
+  m_Name: Alphabet9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2079,7 +2107,7 @@ RectTransform:
   m_Children:
   - {fileID: 532570554}
   m_Father: {fileID: 59237740}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2178,7 +2206,7 @@ GameObject:
   - component: {fileID: 1087742396}
   - component: {fileID: 1087742395}
   m_Layer: 5
-  m_Name: Alphabet (11)
+  m_Name: Alphabet15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2197,7 +2225,7 @@ RectTransform:
   m_Children:
   - {fileID: 984740374}
   m_Father: {fileID: 59237740}
-  m_RootOrder: 11
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2352,9 +2380,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'wordfifteenlengths
-
-'
+  m_Text: WordDisplay
 --- !u!222 &1164880517
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2375,7 +2401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c1e660aeddb3f42a44866f3929bcad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wordText: {fileID: 0}
+  wordText: {fileID: 1164880516}
 --- !u!1 &1188087570
 GameObject:
   m_ObjectHideFlags: 0
@@ -2433,18 +2459,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 5
+    m_MaxSize: 55
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: B
 --- !u!222 &1188087573
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2510,18 +2536,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 5
+    m_MaxSize: 55
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: E
 --- !u!222 &1196855359
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2543,7 +2569,7 @@ GameObject:
   - component: {fileID: 1202768073}
   - component: {fileID: 1202768072}
   m_Layer: 5
-  m_Name: Alphabet (10)
+  m_Name: Alphabet11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2659,9 +2685,8 @@ GameObject:
   - component: {fileID: 1319549907}
   - component: {fileID: 1319549910}
   - component: {fileID: 1319549909}
-  - component: {fileID: 1319549908}
   m_Layer: 5
-  m_Name: levelDisplay
+  m_Name: ScoreDisplay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2686,19 +2711,6 @@ RectTransform:
   m_AnchoredPosition: {x: 271.4, y: 648.8}
   m_SizeDelta: {x: 323.8, y: 260.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1319549908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1319549906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ae374cf3b6806a49921fc1e73ce8e03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelText: {fileID: 0}
 --- !u!114 &1319549909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2730,7 +2742,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'level '
+  m_Text: 'Score
+
+'
 --- !u!222 &1319549910
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2796,18 +2810,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 5
+    m_MaxSize: 55
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: G
 --- !u!222 &1361168647
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2830,7 +2844,7 @@ GameObject:
   - component: {fileID: 1427498112}
   - component: {fileID: 1427498115}
   m_Layer: 5
-  m_Name: Alphabet
+  m_Name: Alphabet1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3004,18 +3018,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 5
+    m_MaxSize: 55
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: N
 --- !u!222 &1429167711
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3023,6 +3037,83 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1429167708}
+  m_CullTransparentMesh: 0
+--- !u!1 &1461336777
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1461336778}
+  - component: {fileID: 1461336780}
+  - component: {fileID: 1461336779}
+  m_Layer: 5
+  m_Name: TimeDisplay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1461336778
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461336777}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1697368950}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -209.9, y: 663.85}
+  m_SizeDelta: {x: 382.9, y: 230.3}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1461336779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461336777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 55
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 55
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: TIME 120
+--- !u!222 &1461336780
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461336777}
   m_CullTransparentMesh: 0
 --- !u!1 &1697368946
 GameObject:
@@ -3118,6 +3209,7 @@ RectTransform:
   - {fileID: 1319549907}
   - {fileID: 59237740}
   - {fileID: 905398223}
+  - {fileID: 1461336778}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3139,7 +3231,7 @@ GameObject:
   - component: {fileID: 1832216751}
   - component: {fileID: 1832216750}
   m_Layer: 5
-  m_Name: Alphabet (14)
+  m_Name: Alphabet12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3158,7 +3250,7 @@ RectTransform:
   m_Children:
   - {fileID: 156080691}
   m_Father: {fileID: 59237740}
-  m_RootOrder: 14
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3257,7 +3349,7 @@ GameObject:
   - component: {fileID: 1949732342}
   - component: {fileID: 1949732341}
   m_Layer: 5
-  m_Name: Alphabet (8)
+  m_Name: Alphabet8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3276,11 +3368,11 @@ RectTransform:
   m_Children:
   - {fileID: 223978141}
   m_Father: {fileID: 59237740}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000019073, y: -210.00002}
+  m_AnchoredPosition: {x: 0, y: -210.00002}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1949732341
@@ -3419,18 +3511,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 5
+    m_MaxSize: 55
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: K
 --- !u!222 &2081548779
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3452,7 +3544,7 @@ GameObject:
   - component: {fileID: 2094464385}
   - component: {fileID: 2094464384}
   m_Layer: 5
-  m_Name: Alphabet (13)
+  m_Name: Alphabet13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3471,11 +3563,11 @@ RectTransform:
   m_Children:
   - {fileID: 2103213132}
   m_Father: {fileID: 59237740}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000019073, y: -389}
+  m_AnchoredPosition: {x: 0, y: -389}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2094464384
@@ -3614,18 +3706,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 5
+    m_MaxSize: 55
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: M
 --- !u!222 &2103213134
 CanvasRenderer:
   m_ObjectHideFlags: 0
