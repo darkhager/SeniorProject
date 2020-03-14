@@ -32,7 +32,8 @@ public class WordSystem : MonoBehaviour
         "W", "W",//2
         "X",//1
         "Y", "Y",//2
-        "Z" };//1
+        "Z"//1 
+};
     string[] vowelCollection = {
         "A", "A", "A", "A", "A", "A", "A", "A", "A",
         "E", "E", "E", "E", "E", "E", "E", "E", "E", "E", "E", "E",
@@ -49,25 +50,26 @@ public class WordSystem : MonoBehaviour
     {
         while (alphabetSet.Length != 11)
         {
-            alphabetSet = alphabetSet + alphabetCollection[UnityEngine.Random.RandomRange(0, alphabetCollection.Length)];
+            alphabetSet = alphabetSet + alphabetCollection[Random.Range(0, alphabetCollection.Length)];
         }
+       
         int count = 0;
-        for (int i = 0; i < 11; i++)
-        {
-            if (alphabetSet[i] == 'A' || alphabetSet[i] == 'E' || alphabetSet[i] == 'I' || alphabetSet[i] == 'O' || alphabetSet[i] == 'U')
-            {
+        int alphaFill = 0;
+        for (int i = 0; i < alphabetSet.Length; i++) {
+            if (alphabetSet[i] == 'A' || alphabetSet[i] == 'E' || alphabetSet[i] == 'I' || alphabetSet[i] == 'O' || alphabetSet[i] == 'U') {
                 count++;
             }
         }
-        if (count < 4) {
-            for (int i = 0; i < 4-count; i++)
-            {
-                alphabetSet = alphabetSet + vowelCollection[UnityEngine.Random.RandomRange(0, vowelCollection.Length)];
+        alphaFill = 4 - count;
+        if (alphaFill > 0) {
+            for (int i = 0; i < alphaFill; i++) {
+                alphabetSet = alphabetSet + vowelCollection[Random.Range(0, vowelCollection.Length)];
             }
         }
-        for (int i = alphabetSet.Length; i < 15; i++)
-        {
-            alphabetSet = alphabetSet + alphabetCollection[UnityEngine.Random.RandomRange(0, alphabetCollection.Length)];
+        if (alphabetSet.Length < 15) {
+            for (int i = alphabetSet.Length; i < 15; i++) {
+                alphabetSet = alphabetSet + alphabetCollection[Random.Range(0, alphabetCollection.Length)];
+            }
         }
         alphaText.text = alphabetSet;
         alphabet1.text = new string(alphabetSet[0], 1);
@@ -92,27 +94,9 @@ public class WordSystem : MonoBehaviour
     {
         while (alphabetSet.Length != 11)
         {
-            alphabetSet = alphabetSet + alphabetCollection[UnityEngine.Random.RandomRange(0, alphabetCollection.Length)];
+            alphabetSet = alphabetSet + alphabetCollection[Random.Range(0, alphabetCollection.Length)];
         }
-        int count = 0;
-        for (int i = 0; i < 11; i++)
-        {
-            if (alphabetSet[i] == 'A' || alphabetSet[i] == 'E' || alphabetSet[i] == 'I' || alphabetSet[i] == 'O' || alphabetSet[i] == 'U')
-            {
-                count++;
-            }
-        }
-        if (count < 4)
-        {
-            for (int i = 0; i < 4 - count; i++)
-            {
-                alphabetSet = alphabetSet + vowelCollection[UnityEngine.Random.RandomRange(0, vowelCollection.Length)];
-            }
-        }
-        for (int i = alphabetSet.Length; i < 15; i++)
-        {
-            alphabetSet = alphabetSet + alphabetCollection[UnityEngine.Random.RandomRange(0, alphabetCollection.Length)];
-        }
+        
         alphaText.text = alphabetSet;
         alphabet1.text = new string(alphabetSet[0], 1);
         alphabet2.text = new string(alphabetSet[1], 1);
