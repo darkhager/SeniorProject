@@ -48,7 +48,7 @@ public class WordSystem : MonoBehaviour
 
     void Start()
     {
-        while (alphabetSet.Length != 11)
+        while (alphabetSet.Length != 15)
         {
             alphabetSet = alphabetSet + alphabetCollection[Random.Range(0, alphabetCollection.Length)];
         }
@@ -66,11 +66,13 @@ public class WordSystem : MonoBehaviour
                 alphabetSet = alphabetSet + vowelCollection[Random.Range(0, vowelCollection.Length)];
             }
         }
+        /*
         if (alphabetSet.Length < 15) {
             for (int i = alphabetSet.Length; i < 15; i++) {
                 alphabetSet = alphabetSet + alphabetCollection[Random.Range(0, alphabetCollection.Length)];
             }
         }
+        */
         alphaText.text = alphabetSet;
         alphabet1.text = new string(alphabetSet[0], 1);
         alphabet2.text = new string(alphabetSet[1], 1);
