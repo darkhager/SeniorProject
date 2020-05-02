@@ -48,72 +48,60 @@ public class WordSystem : MonoBehaviour
 
     void Start()
     {
-        while (alphabetSet.Length != 15)
-        {
-            alphabetSet = alphabetSet + alphabetCollection[Random.Range(0, alphabetCollection.Length)];
+        while(alphabetSet.Length!=15){
+            alphabetSet = alphabetSet+alphabetCollection[Random.Range(0,alphabetCollection.Length-1)];
         }
-       
-        int count = 0;
-        int alphaFill = 0;
-        for (int i = 0; i < alphabetSet.Length; i++) {
-            if (alphabetSet[i] == 'A' || alphabetSet[i] == 'E' || alphabetSet[i] == 'I' || alphabetSet[i] == 'O' || alphabetSet[i] == 'U') {
-                count++;
-            }
-        }
-        alphaFill = 4 - count;
-        if (alphaFill > 0) {
-            for (int i = 0; i < alphaFill; i++) {
-                alphabetSet = alphabetSet + vowelCollection[Random.Range(0, vowelCollection.Length)];
-            }
-        }
-        /*
-        if (alphabetSet.Length < 15) {
-            for (int i = alphabetSet.Length; i < 15; i++) {
-                alphabetSet = alphabetSet + alphabetCollection[Random.Range(0, alphabetCollection.Length)];
-            }
-        }
-        */
-        alphaText.text = alphabetSet;
-        alphabet1.text = new string(alphabetSet[0], 1);
-        alphabet2.text = new string(alphabetSet[1], 1);
-        alphabet3.text = new string(alphabetSet[2], 1);
-        alphabet4.text = new string(alphabetSet[3], 1);
-        alphabet5.text = new string(alphabetSet[4], 1);
-        alphabet6.text = new string(alphabetSet[5], 1);
-        alphabet7.text = new string(alphabetSet[6], 1);
-        alphabet8.text = new string(alphabetSet[7], 1);
-        alphabet9.text = new string(alphabetSet[8], 1);
-        alphabet10.text = new string(alphabetSet[9], 1);
-        alphabet11.text = new string(alphabetSet[10], 1);
-        alphabet12.text = new string(alphabetSet[11], 1);
-        alphabet13.text = new string(alphabetSet[12], 1);
-        alphabet14.text = new string(alphabetSet[13], 1);
-        alphabet15.text = new string(alphabetSet[14], 1);
     }
 
 
     void Update()
     {
-        while (alphabetSet.Length != 11)
-        {
-            alphabetSet = alphabetSet + alphabetCollection[Random.Range(0, alphabetCollection.Length)];
-        }
-        
         alphaText.text = alphabetSet;
-        alphabet1.text = new string(alphabetSet[0], 1);
-        alphabet2.text = new string(alphabetSet[1], 1);
-        alphabet3.text = new string(alphabetSet[2], 1);
-        alphabet4.text = new string(alphabetSet[3], 1);
-        alphabet5.text = new string(alphabetSet[4], 1);
-        alphabet6.text = new string(alphabetSet[5], 1);
-        alphabet7.text = new string(alphabetSet[6], 1);
-        alphabet8.text = new string(alphabetSet[7], 1);
-        alphabet9.text = new string(alphabetSet[8], 1);
-        alphabet10.text = new string(alphabetSet[9], 1);
-        alphabet11.text = new string(alphabetSet[10], 1);
-        alphabet12.text = new string(alphabetSet[11], 1);
-        alphabet13.text = new string(alphabetSet[12], 1);
-        alphabet14.text = new string(alphabetSet[13], 1);
-        alphabet15.text = new string(alphabetSet[14], 1);
+        alphabet1.text = alphabetSet.Substring(0,1);
+        alphabet2.text = alphabetSet.Substring(1, 1);
+        alphabet3.text = alphabetSet.Substring(2, 1);
+        alphabet4.text = alphabetSet.Substring(3, 1);
+        alphabet5.text = alphabetSet.Substring(4, 1);
+        alphabet6.text = alphabetSet.Substring(5, 1);
+        alphabet7.text = alphabetSet.Substring(6, 1);
+        alphabet8.text = alphabetSet.Substring(7, 1);
+        alphabet9.text = alphabetSet.Substring(8, 1);
+        alphabet10.text = alphabetSet.Substring(9, 1);
+        alphabet11.text = alphabetSet.Substring(10, 1);
+        alphabet12.text = alphabetSet.Substring(11, 1);
+        alphabet13.text = alphabetSet.Substring(12, 1);
+        alphabet14.text = alphabetSet.Substring(13, 1);
+        alphabet15.text = alphabetSet.Substring(14, 1);
+        string[] arrayCheck= { };
+        int count = 0;
+        for (int i = 0; i < 15; i++) {
+            if (alphabetSet[i] == 'A') {
+                arrayCheck[i] ="A";
+                count++;
+            }
+            if (alphabetSet[i] == 'E')
+            {
+                arrayCheck[i] = "E";
+                count++;
+            }
+            if (alphabetSet[i] == 'I')
+            {
+                arrayCheck[i] = "I";
+                count++;
+            }
+            if (alphabetSet[i] == 'O')
+            {
+                arrayCheck[i] = "O";
+                count++;
+            }
+            if (alphabetSet[i] == 'U')
+            {
+                arrayCheck[i] = "U";
+                count++;
+            }
+        }
+        if (count < 4) {
+            
+        }
     }
 }
