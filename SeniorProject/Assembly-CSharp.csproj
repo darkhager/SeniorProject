@@ -62,9 +62,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\ButtonManager.cs" />
     <Compile Include="Assets\Script\WordDisplay.cs" />
     <Compile Include="Assets\Script\WordSystem.cs" />
+    <None Include="Assets\words.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

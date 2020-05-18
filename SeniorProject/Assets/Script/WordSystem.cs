@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class WordSystem : MonoBehaviour
 {
-    string alphabetSet = "";
+    string alphabetSet = "", alpha1, alpha2, alpha3, alpha4, alpha5, alpha6, alpha7, alpha8,
+        alpha9, alpha10, alpha11, alpha12, alpha13, alpha14, alpha15, wordString, dictionary;
     string[] alphabetCollection = {
         "A", "A", "A", "A", "A", "A", "A", "A", "A",//9
         "B", "B",//2
@@ -43,13 +44,20 @@ public class WordSystem : MonoBehaviour
     };
     public Text alphaText, alphabet1, alphabet2,alphabet3, alphabet4, alphabet5, 
         alphabet6, alphabet7, alphabet8, alphabet9, alphabet10, 
-        alphabet11, alphabet12, alphabet13, alphabet14, alphabet15
+        alphabet11, alphabet12, alphabet13, alphabet14, alphabet15,
+        word
         ;
-    public string alpha1, alpha2, alpha3, alpha4, alpha5, alpha6, alpha7, alpha8,
-        alpha9, alpha10, alpha11, alpha12, alpha13, alpha14, alpha15;
+    public Button button1, button2, button3, button4, button5, button6, button7, button8,
+        button9, button10, button11, button12, button13, button14, button15,
+        refresh, check;
+    public TextAsset dictionaryFile;
+
     void Start()
     {
+        dictionary = dictionaryFile.text;
         AlphabetSetRandom();
+        refresh.interactable = false;
+        check.interactable = false;
     }
 
 
@@ -87,13 +95,135 @@ public class WordSystem : MonoBehaviour
         alpha15 = alphabetSet.Substring(14, 1);
         alphabet15.text = alpha15;
         AlphabetSetRandom();
+        word.text = wordString;
+    }
+    public void AlphabetSelect1() {
+        wordString += alpha1;
+        button1.interactable = false;
+        interactableFunction(true);
+    }
+    public void AlphabetSelect2()
+    {
+        wordString += alpha2;
+        button2.interactable = false;
+        interactableFunction(true);
+    }
+    public void AlphabetSelect3()
+    {
+        wordString += alpha3;
+        button3.interactable = false;
+        interactableFunction(true);
+    }
+    public void AlphabetSelect4()
+    {
+        wordString += alpha4;
+        button4.interactable = false;
+        interactableFunction(true);
+    }
+    public void AlphabetSelect5()
+    {
+        wordString += alpha5;
+        button5.interactable = false;
+        interactableFunction(true);
+    }
+    public void AlphabetSelect6()
+    {
+        wordString += alpha6;
+        button6.interactable = false;
+        refresh.interactable = true;
+        check.interactable = true;
+    }
+    public void AlphabetSelect7()
+    {
+        wordString += alpha7;
+        button7.interactable = false;
+        interactableFunction(true);
+    }
+    public void AlphabetSelect8()
+    {
+        wordString += alpha8;
+        button8.interactable = false;
+        interactableFunction(true);
+    }
+    public void AlphabetSelect9()
+    {
+        wordString += alpha9;
+        button9.interactable = false;
+        interactableFunction(true);
+    }
+    public void AlphabetSelect10()
+    {
+        wordString += alpha10;
+        button10.interactable = false;
+        interactableFunction(true);
+    }
+    public void AlphabetSelect11()
+    {
+        wordString += alpha11;
+        button11.interactable = false;
+        interactableFunction(true);
+    }
+    public void AlphabetSelect12()
+    {
+        wordString += alpha12;
+        button12.interactable = false;
+        interactableFunction(true);
+    }
+    public void AlphabetSelect13()
+    {
+        wordString += alpha13;
+        button13.interactable = false;
+        interactableFunction(true);
+    }
+    public void AlphabetSelect14()
+    {
+        wordString += alpha14;
+        button14.interactable = false;
+        interactableFunction(true);
+    }
+    public void AlphabetSelect15()
+    {
+        wordString += alpha15;
+        button15.interactable = false;
+        interactableFunction(true);
+    }
+    public void RefreshTheWord() {
+        wordString = "";
+        interactableAlphabet(true);
+        interactableFunction(false);
+    }
+    public void CheckDictionary() {
+        if (dictionary.Contains(wordString)) {
+            interactableAlphabet(true);
+            interactableFunction(false);
+        }
+    }
+    public void interactableAlphabet(bool setBoolean) {
+        button1.interactable = setBoolean;
+        button2.interactable = setBoolean;
+        button3.interactable = setBoolean;
+        button4.interactable = setBoolean;
+        button5.interactable = setBoolean;
+        button6.interactable = setBoolean;
+        button7.interactable = setBoolean;
+        button8.interactable = setBoolean;
+        button9.interactable = setBoolean;
+        button10.interactable = setBoolean;
+        button11.interactable = setBoolean;
+        button12.interactable = setBoolean;
+        button13.interactable = setBoolean;
+        button14.interactable = setBoolean;
+        button15.interactable = setBoolean;
+    }
+    public void interactableFunction(bool setBool) {
+        refresh.interactable = setBool;
+        check.interactable = setBool;
     }
     public void AlphabetSetRandom() {
         while (alphabetSet.Length != 15)
         {
             alphabetSet = alphabetSet + alphabetCollection[Random.Range(0, alphabetCollection.Length - 1)];
-        }
+        } 
     }
-    
 }
 
