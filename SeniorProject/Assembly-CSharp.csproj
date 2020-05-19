@@ -62,7 +62,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\WordDisplay.cs" />
     <Compile Include="Assets\Script\WordSystem.cs" />
     <None Include="Assets\words.txt" />
     <Reference Include="UnityEngine">
