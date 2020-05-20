@@ -6,7 +6,9 @@ using UnityEngine.UI;
 public class WordSystem : MonoBehaviour
 {
     string alphabetSet = "", wordString="", dictionary;
+    string[] wordArray = { "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" };
     string[] alphabetSetCollection = { "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" };
+    string[] alphabetSetCollection2 = { "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" };
     string[] alphabetCollection = {
         "A", "A", "A", "A", "A", "A", "A", "A", "A",//9
         "B", "B",//2
@@ -48,168 +50,210 @@ public class WordSystem : MonoBehaviour
         word, score, alphabetScore1, alphabetScore2, alphabetScore3, alphabetScore4
         , alphabetScore5, alphabetScore6, alphabetScore7, alphabetScore8
         , alphabetScore9, alphabetScore10, alphabetScore11, alphabetScore12
-        , alphabetScore13, alphabetScore14, alphabetScore15;
+        , alphabetScore13, alphabetScore14, alphabetScore15, refreshCount;
     public Button button1, button2, button3, button4, button5, button6, button7, button8,
         button9, button10, button11, button12, button13, button14, button15,
-        refresh, check;
+        DeleteAll, check, Delete,Refresh;
     public TextAsset dictionaryFile;
     private int[] scoreControl = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    private int refreshCountTimes,scoreCount = 0;
     void Start()
     {
         score.text = "Score : 0";
         dictionary = dictionaryFile.text;
-        refresh.interactable = false;
-        check.interactable = false;
+        interactableFunction(false);
         AlphabetSetRandom();
         AlphaScore();
+        refreshCountTimes = 2;
+        refreshCountDisplay();
+        ScoreUpdate();
     }
 
 
     void Update()
     {
-        
+
         alphaText.text = alphabetSet;
-   
-        alphabet1.text = alphabetSetCollection[1];
-        alphabet2.text = alphabetSetCollection[2];
-        alphabet3.text = alphabetSetCollection[3];
-        alphabet4.text = alphabetSetCollection[4];
-        alphabet5.text = alphabetSetCollection[5];
-        alphabet6.text = alphabetSetCollection[6];
-        alphabet7.text = alphabetSetCollection[7];
-        alphabet8.text = alphabetSetCollection[8];
-        alphabet9.text = alphabetSetCollection[9];
-        alphabet10.text = alphabetSetCollection[10];
-        alphabet11.text = alphabetSetCollection[11];
-        alphabet12.text = alphabetSetCollection[12];
-        alphabet13.text = alphabetSetCollection[13];
-        alphabet14.text = alphabetSetCollection[14];
-        alphabet15.text = alphabetSetCollection[15];
 
-        alphabetScore1.text = ""+ scoreControl[1];
-        alphabetScore2.text = "" + scoreControl[2];
-        alphabetScore3.text = "" + scoreControl[3];
-        alphabetScore4.text = "" + scoreControl[4];
-        alphabetScore5.text = "" + scoreControl[5];
-        alphabetScore6.text = "" + scoreControl[6];
-        alphabetScore7.text = "" + scoreControl[7];
-        alphabetScore8.text = "" + scoreControl[8];
-        alphabetScore9.text = "" + scoreControl[9];
-        alphabetScore10.text = "" + scoreControl[10];
-        alphabetScore11.text = "" + scoreControl[11];
-        alphabetScore12.text = "" + scoreControl[12];
-        alphabetScore13.text = "" + scoreControl[13];
-        alphabetScore14.text = "" + scoreControl[14];
-        alphabetScore15.text = "" + scoreControl[15];
-
+        AlphabetUpdate();
+       
         word.text = wordString;
+
+        if (refreshCountTimes == 0) {
+            Refresh.interactable = false;
+        }
     }
 
 
     public void AlphabetSelect1() {
-        wordString += alphabetSetCollection[1];
+        AddToWordArray(alphabetSetCollection[0]);
+        wordString += alphabetSetCollection[0];
+        alphabetSetCollection2[0] = "";
         button1.interactable = false;
         interactableFunction(true);
     }
     public void AlphabetSelect2()
     {
-        wordString += alphabetSetCollection[2];
+        AddToWordArray(alphabetSetCollection[1]);
+        wordString += alphabetSetCollection[1];
+        alphabetSetCollection2[1] = "";
         button2.interactable = false;
         interactableFunction(true);
     }
     public void AlphabetSelect3()
     {
-        wordString += alphabetSetCollection[3];
+        AddToWordArray(alphabetSetCollection[2]);
+        wordString += alphabetSetCollection[2];
+        alphabetSetCollection2[2] = "";
         button3.interactable = false;
         interactableFunction(true);
     }
     public void AlphabetSelect4()
     {
-        wordString += alphabetSetCollection[4];
+        AddToWordArray(alphabetSetCollection[3]);
+        wordString += alphabetSetCollection[3];
+        alphabetSetCollection2[3] = "";
         button4.interactable = false;
         interactableFunction(true);
     }
     public void AlphabetSelect5()
     {
-        wordString += alphabetSetCollection[5];
+        AddToWordArray(alphabetSetCollection[4]);
+        wordString += alphabetSetCollection[4];
+        alphabetSetCollection2[4] = "";
         button5.interactable = false;
         interactableFunction(true);
     }
     public void AlphabetSelect6()
     {
-        wordString += alphabetSetCollection[6];
+        AddToWordArray(alphabetSetCollection[5]);
+        wordString += alphabetSetCollection[5];
+        alphabetSetCollection2[5] = "";
         button6.interactable = false;
-        refresh.interactable = true;
-        check.interactable = true;
+        interactableFunction(true);
     }
     public void AlphabetSelect7()
     {
-        wordString += alphabetSetCollection[7];
+        AddToWordArray(alphabetSetCollection[6]);
+        wordString += alphabetSetCollection[6];
+        alphabetSetCollection2[6] = "";
         button7.interactable = false;
         interactableFunction(true);
     }
     public void AlphabetSelect8()
     {
-        wordString += alphabetSetCollection[8];
+        AddToWordArray(alphabetSetCollection[7]);
+        wordString += alphabetSetCollection[7];
+        alphabetSetCollection2[7] = "";
         button8.interactable = false;
         interactableFunction(true);
     }
     public void AlphabetSelect9()
     {
-        wordString += alphabetSetCollection[9];
+        AddToWordArray(alphabetSetCollection[8]);
+        wordString += alphabetSetCollection[8];
+        alphabetSetCollection2[8] = "";
         button9.interactable = false;
         interactableFunction(true);
     }
     public void AlphabetSelect10()
     {
-        wordString += alphabetSetCollection[10];
+        AddToWordArray(alphabetSetCollection[9]);
+        wordString += alphabetSetCollection[9];
+        alphabetSetCollection2[9] = "";
         button10.interactable = false;
         interactableFunction(true);
     }
     public void AlphabetSelect11()
     {
-        wordString += alphabetSetCollection[11];
+        AddToWordArray(alphabetSetCollection[10]);
+        wordString += alphabetSetCollection[10];
+        alphabetSetCollection2[10] = "";
         button11.interactable = false;
         interactableFunction(true);
     }
     public void AlphabetSelect12()
     {
-        wordString += alphabetSetCollection[12];
+        AddToWordArray(alphabetSetCollection[11]);
+        wordString += alphabetSetCollection[11];
+        alphabetSetCollection2[11] = "";
         button12.interactable = false;
         interactableFunction(true);
     }
     public void AlphabetSelect13()
     {
-        wordString += alphabetSetCollection[13];
+        AddToWordArray(alphabetSetCollection[12]);
+        wordString += alphabetSetCollection[12];
+        alphabetSetCollection2[12] = "";
         button13.interactable = false;
         interactableFunction(true);
     }
     public void AlphabetSelect14()
     {
-        wordString += alphabetSetCollection[14];
+        AddToWordArray(alphabetSetCollection[13]);
+        wordString += alphabetSetCollection[13];
+        alphabetSetCollection2[13] = "";
         button14.interactable = false;
         interactableFunction(true);
     }
     public void AlphabetSelect15()
     {
-        wordString += alphabetSetCollection[15];
+        AddToWordArray(alphabetSetCollection[14]);
+        wordString += alphabetSetCollection[14];
+        alphabetSetCollection2[14] = "";
         button15.interactable = false;
         interactableFunction(true);
     }
-    public void RefreshTheWord() {
-        wordString = "";
-        interactableAlphabet(true);
-        interactableFunction(false);
-    }
-    public void CheckDictionary() {
-        for (int i = 0; i < 15; i++) {
-            for (int j = 0; j < wordString.Length; j++) {
 
-            }
+    public void DeleteAllWord() {
+        wordString = "";
+        for (int i = 0; i < wordArray.Length;i++) {
+            wordArray[i] = "";
         }
         interactableAlphabet(true);
         interactableFunction(false);
     }
+    public void DeleteWord() {
+        wordString = wordString.Substring(0, wordString.Length - 1);
+        for (int i = wordArray.Length; i < 0; i--)
+        {
+            if (wordArray[i] != "") {
+                wordArray[i] = "";
+                break;
+            }
+        }
+        if (wordString.Length == 0) {
+            interactableAlphabet(true);
+            interactableFunction(false);
+        }
+    }
+    public void CheckDictionary() {
+        ScoreCalculate();
+        ScoreUpdate();
+        DeleteAllWord();
+        alphabetSetCollection = alphabetSetCollection2;
+        AlphabetSetRefill();
+        AlphabetUpdate();
+        interactableAlphabet(true);
+        interactableFunction(false);
+    }
+    public void RefreshWord()
+    {
+        if (refreshCountTimes > 0)
+        {
+            interactableAlphabet(true);
+            DeleteAllWord();
+            refreshCountTimes -= 1;
+            refreshCountDisplay();
+            AlphabetSetRandom();
+            AlphaScore();
+            alphabetSetCollection2 = alphabetSetCollection;
+        }
+        else {
+            Refresh.interactable = false;
+        }
+    }
+
     public void interactableAlphabet(bool setBoolean) {
         button1.interactable = setBoolean;
         button2.interactable = setBoolean;
@@ -228,101 +272,120 @@ public class WordSystem : MonoBehaviour
         button15.interactable = setBoolean;
     }
     public void interactableFunction(bool setBool) {
-        refresh.interactable = setBool;
+        DeleteAll.interactable = setBool;
         check.interactable = setBool;
+        Delete.interactable = setBool;
     }
-    public void scoreCalculate() {
-        int scoreInWord = 0;
+
+    public void refreshCountDisplay() {
+        refreshCount.text = "Refresh : " + refreshCountTimes;
+    }
+
+    public void ScoreUpdate() {
+        score.text = "Score : " + scoreCount;
+    }
+    public void ScoreCalculate() {
         for (int i = 0; i < wordString.Length; i++) {
            switch (wordString.Substring(i, 1).ToLower()) {
                 case "e":
-                    scoreInWord += 1;
+                    scoreCount += 1;
                     break;
                 case "a":
-                    scoreInWord += 1;
+                    scoreCount += 1;
                     break;
                 case "i":
-                    scoreInWord += 1;
+                    scoreCount += 1;
                     break;
                 case "o":
-                    scoreInWord += 1;
+                    scoreCount += 1;
                     break;
                 case "n":
-                    scoreInWord += 1;
+                    scoreCount += 1;
                     break;
                 case "r":
-                    scoreInWord += 1;
+                    scoreCount += 1;
                     break;
                 case "t":
-                    scoreInWord += 1;
+                    scoreCount += 1;
                     break;
                 case "l":
-                    scoreInWord += 1;
+                    scoreCount += 1;
                     break;
                 case "s":
-                    scoreInWord += 1;
+                    scoreCount += 1;
                     break;
                 case "u":
-                    scoreInWord += 1;
+                    scoreCount += 1;
                     break;
                 case "d":
-                    scoreInWord += 2;
+                    scoreCount += 2;
                     break;
                 case "g":
-                    scoreInWord += 2;
+                    scoreCount += 2;
                     break;
                 case "b":
-                    scoreInWord += 3;
+                    scoreCount += 3;
                     break;
                 case "c":
-                    scoreInWord += 3;
+                    scoreCount += 3;
                     break;
                 case "m":
-                    scoreInWord += 3;
+                    scoreCount += 3;
                     break;
                 case "p":
-                    scoreInWord += 3;
+                    scoreCount += 3;
                     break;
                 case "f":
-                    scoreInWord += 4;
+                    scoreCount += 4;
                     break;
                 case "h":
-                    scoreInWord += 4;
+                    scoreCount += 4;
                     break;
                 case "v":
-                    scoreInWord += 4;
+                    scoreCount += 4;
                     break;
                 case "w":
-                    scoreInWord += 4;
+                    scoreCount += 4;
                     break;
                 case "y":
-                    scoreInWord += 4;
+                    scoreCount += 4;
                     break;
                 case "k":
-                    scoreInWord += 5;
+                    scoreCount += 5;
                     break;
                 case "j":
-                    scoreInWord += 8;
+                    scoreCount += 8;
                     break;
                 case "x":
-                    scoreInWord += 8;
+                    scoreCount += 8;
                     break;
                 case "q":
-                    scoreInWord += 10;
+                    scoreCount += 10;
                     break;
                 case "z":
-                    scoreInWord += 10;
+                    scoreCount += 10;
                     break;
             }
         }
     }
     public void AlphabetSetRandom() {
         string alphabetSelect = "";
-        for (int i= alphabetSelect.Length ; i < 15 ; i++)
+        for (int i= alphabetSelect.Length ; i < alphabetSetCollection.Length; i++)
         {
             alphabetSelect = alphabetCollection[Random.Range(0, alphabetCollection.Length - 1)];
             alphabetSetCollection[i] = alphabetSelect;
+            alphabetSetCollection2[i] = alphabetSelect;
         } 
+    }
+    public void AlphabetSetRefill() {
+        string alphabetSelect = "";
+        for (int i = alphabetSelect.Length; i < alphabetSetCollection.Length; i++) {
+            if (alphabetSetCollection[i] == "") {
+                alphabetSelect = alphabetCollection[Random.Range(0, alphabetCollection.Length - 1)];
+                alphabetSetCollection[i] = alphabetSelect;
+                alphabetSetCollection2[i] = alphabetSelect;
+            }
+        }
     }
     public void AlphaScore() {
         for(int i = 0;i < 15;i++)
@@ -409,6 +472,49 @@ public class WordSystem : MonoBehaviour
                     scoreControl[i] = 0;
                     break;
         }
+    }
+    public void AddToWordArray(string alphabetWord) {
+        for (int i = 0 ; i < wordArray.Length ; i++) {
+            if (wordArray[i] == "") {
+                wordArray[i] = alphabetWord;
+                break;
+            }
+        }
+    }
+    public void AlphabetUpdate() {
+        
+        alphabet1.text = alphabetSetCollection[0];
+        alphabet2.text = alphabetSetCollection[1];
+        alphabet3.text = alphabetSetCollection[2];
+        alphabet4.text = alphabetSetCollection[3];
+        alphabet5.text = alphabetSetCollection[4];
+        alphabet6.text = alphabetSetCollection[5];
+        alphabet7.text = alphabetSetCollection[6];
+        alphabet8.text = alphabetSetCollection[7];
+        alphabet9.text = alphabetSetCollection[8];
+        alphabet10.text = alphabetSetCollection[9];
+        alphabet11.text = alphabetSetCollection[10];
+        alphabet12.text = alphabetSetCollection[11];
+        alphabet13.text = alphabetSetCollection[12];
+        alphabet14.text = alphabetSetCollection[13];
+        alphabet15.text = alphabetSetCollection[14];
+
+        
+        alphabetScore1.text = ""+ scoreControl[0];
+        alphabetScore2.text = "" + scoreControl[1];
+        alphabetScore3.text = "" + scoreControl[2];
+        alphabetScore4.text = "" + scoreControl[3];
+        alphabetScore5.text = "" + scoreControl[4];
+        alphabetScore6.text = "" + scoreControl[5];
+        alphabetScore7.text = "" + scoreControl[6];
+        alphabetScore8.text = "" + scoreControl[7];
+        alphabetScore9.text = "" + scoreControl[8];
+        alphabetScore10.text = "" + scoreControl[9];
+        alphabetScore11.text = "" + scoreControl[10];
+        alphabetScore12.text = "" + scoreControl[11];
+        alphabetScore13.text = "" + scoreControl[12];
+        alphabetScore14.text = "" + scoreControl[13];
+        alphabetScore15.text = "" + scoreControl[14];
     }
 }
 
