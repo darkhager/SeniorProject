@@ -34,7 +34,7 @@ public class WordSystem : MonoBehaviour
         "I", "I", "I", "I", "I", "I", "I", "I", "I",
         "O", "O", "O", "O", "O", "O", "O", "O",
         "U", "U", "U", "U"
-    };
+    }; 
     string alphabetSet="", wordString="";
     string[] wordArray = { "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" };
     string[] alphabetSetCollection = { "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" };
@@ -56,6 +56,7 @@ public class WordSystem : MonoBehaviour
     private int refreshCountTimes,scoreCount = 0,health = 100;
     private float timer = 180, bossTimer;
     int[] wordSequence = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+    public wordDictionary dictScript;
 
     void Start()
     {
@@ -291,7 +292,7 @@ public class WordSystem : MonoBehaviour
     }
     public void CheckDictionary()/*ตรวจสอบคำและเช็คคะแนน*/
     {
-        wordDictionary dictScript = gameObject.GetComponent<wordDictionary>();
+        dictScript = GameObject.Find("Dictionary").GetComponent<wordDictionary>();
         bool Check = false;
         dictScript.checkWord(wordString);
         Check = dictScript.wordCheck;
