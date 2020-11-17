@@ -62,9 +62,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\HealthBar.cs" />
     <Compile Include="Assets\Script\InGameManage.cs" />
-    <Compile Include="Assets\Script\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Script\Player.cs" />
     <Compile Include="Assets\Script\WordSystem.cs" />
+    <Compile Include="Assets\Script\WordSystemBossMode.cs" />
     <Compile Include="Assets\Script\wordDictionary.cs" />
     <None Include="Assets\word\word_new.txt" />
     <None Include="Assets\word\ospd_optimized.txt" />

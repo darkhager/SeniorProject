@@ -4548,7 +4548,7 @@ MonoBehaviour:
   score: {fileID: 1319549909}
   refreshCount: {fileID: 1282177781}
   Timer: {fileID: 1461336779}
-  dictScript: {fileID: 0}
+  dictScript: {fileID: 1396256036}
 --- !u!4 &1458220418
 Transform:
   m_ObjectHideFlags: 0
