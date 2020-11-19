@@ -65,6 +65,7 @@
     <Compile Include="Assets\Script\HealthBar.cs" />
     <Compile Include="Assets\Script\InGameManage.cs" />
     <Compile Include="Assets\Script\Player.cs" />
+    <Compile Include="Assets\Script\SceneManager.cs" />
     <Compile Include="Assets\Script\WordSystem.cs" />
     <Compile Include="Assets\Script\WordSystemBossMode.cs" />
     <Compile Include="Assets\Script\wordDictionary.cs" />
